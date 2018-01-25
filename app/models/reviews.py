@@ -19,7 +19,7 @@ class Reviews:
     @classmethod
     def get_reviews(cls,id):
 
-        response[]
+        response = []
 
         for review in cls.all_reviews:
             if review.movie_id == id:
