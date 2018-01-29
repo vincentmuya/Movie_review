@@ -17,22 +17,53 @@
 
   </div>
 
+  <div class="tabs">
+   <div class="row">
+   <div class="col-md-2">
       <!-- Popular movie -->
       <h3> Popular Movies</h3>
+      </div>
+      <div class="col-md-10">
       <ul>
           {{ macro.displayMovieList(popular)}}
       </ul>
+    </div>
+</div>
+</div>
+      <hr>
       <br>
+
+      <div class="tabs">
+       <div class="row">
+       <div class="col-md-2">
       <!-- Upcoming movie  -->
       <h3> Upcoming Movies </h3>
+    </div>
+    <div class="col-md-10">
       <ul>
           {{ macro.displayMovieList(upcoming)}}
       </ul>
+    </div>
+</div>
+</div>
+      <hr>
+      <br>
+
+      <div class="tabs">
+       <div class="row">
+       <div class="col-md-2">
       <!-- Now showing movie -->
       <h3>Now Showing</h3>
+    </div>
+    <div class="col-md-10">
       <ul>
           {{ macro.displayMovieList(now_showing)}}
       </ul>
+    </div>
+</div>
+</div>
+      <hr>
+      <br>
 
 
       {% endblock%}
