@@ -1,0 +1,16 @@
+.tabs {
+  /*background-color: blue;*/
+  margin: 50px;
+  padding: 40px;
+  /*background-color: transparent;*/
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 1px 1px 20px #000;
+}
+
+.tabs:hover {
+  box-shadow: 0 0 12px rgba(33, 33, 33, .2);
+}
+body {
+  background-color: blue:
+}
