@@ -8,11 +8,9 @@ from flask_login import login_required
 #views
 @main.route('/')
 def index():
-
     '''
     View root page function that returns the index page and its data
     '''
-
     # Getting popular movie
     popular_movies = get_movies('popular')
     upcoming_movie = get_movies('upcoming')
@@ -62,3 +60,12 @@ def new_review(id):
 
     title = f'{movie.title} review'
     return render_template('new_review.html',title = title, review_form = form, movie = movie)
+
+@main.route('/user/<uname>')
+def profile(uname):
+    user = User.query.filter_by(username = uname).first()
+
+    if user is None:
+        abort(404)
+
+    return render_template("profile/profile.html", user = user)
