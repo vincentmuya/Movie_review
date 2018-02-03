@@ -1,2 +1,2 @@
 MOVIE_API_KEY = '78cb76defd738ec4e2f50bf31ed96be3'
-SECRET_KEY = '<12345>'
+SECRET_KEY = '12345vinny'
